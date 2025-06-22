@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body style=" background-color: black; color: white;">
+    <table border="all" style="justify-self: center;">
+        <tr>
+            <th>Name</th>
+            <th>Password</th>
+        </tr>
+        <tr  class="hum">
+        </tr>
+    </table>
+    <div style="margin-top: 50px; display: flex; flex-direction: column; width: 170px;">
+        Name: <input id="name" type="text">
+        Password: <input id="password" type="text">
+    </div>
+    <button style="margin-top: 5px;">Submit</button>
+    <button id="btn" style="margin-top: 5px;">Delete</button>
+</body>
+<script>
+
+let name=document.body.querySelector("#name")
+let password=document.body.querySelector("#password")
+document.body.querySelector("button").addEventListener('click',n=>{
+let user=name.value;
+let security=password.value;
+name.value=""
+password.value=""
+if(user==="" || security===""){
+alert("Enter valid username and password")
+}
+else{
+    function addname(name,password){
+   let tr= document.body.querySelector(".hum")
+   let namegen=document.createElement('tr')
+   namegen.innerHTML=`<td id="created">${name}</td>`
+   tr.after(namegen)
+
+let newpas=document.querySelector("#created")
+let passw=document.createElement("td")
+passw.innerHTML=`${password}`
+newpas.after(passw)
+}
+addname(`${user}`,`${security}`)
+}
+})
+document.body.querySelector("#btn").addEventListener('click',n=>{
+    function removal(){
+        let tr= document.body.querySelector("td") 
+        tr.remove()
+    }
+   
+removal()
+removal()
+
+})
+
+</script>
+</html>

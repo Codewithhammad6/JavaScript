@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Hello World!</h1>
+<button id="stop">Stop</button>
+</body>
+<script>
+// let sayhammad=(n)=>{
+//     console.log("Hammad");
+// }
+// setTimeout(sayhammad,1000)
+
+
+
+
+// const changeh1=function(){
+//     document.querySelector('h1').innerHTML="HY HAMMAD"
+// }
+// setTimeout(changeh1,2000)
+
+
+
+
+// const changebackground=function(){
+//     document.body.style.backgroundColor="red"
+// }
+// setTimeout(changebackground,2000)
+
+
+
+
+// ab agar within 2 sec stop button click kr dia background-color not change
+
+const changebackground=function(){
+    document.body.style.backgroundColor="red"
+}
+const stopchange= setTimeout(changebackground,2000)
+
+document.querySelector('#stop').addEventListener('click',n=>{
+    clearTimeout(stopchange)
+})
+
+
+
+
+
+
+</script>
+</html>

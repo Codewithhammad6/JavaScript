@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval</title>
+</head>
+<body style="background-color: black; color: white;">
+
+<h1>Hello World!</h1>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+
+</body>
+<script>
+
+// const saymyname=(function(){
+// console.log("hammad",new Date().toLocaleTimeString());
+
+// })
+// setInterval(saymyname,1000)
+
+
+//             stop button use to stop this 
+
+// const saymyname=(function(){
+// console.log("hammad",new Date().toLocaleTimeString());
+// })
+// const stoptime=setInterval(saymyname,1000)
+// document.querySelector('#stop').addEventListener('click',n=>{
+//     clearInterval(stoptime)
+// })
+
+
+
+//         stop button use to stop this and start use to again start this
+
+const saymyname=(function(){
+console.log("hammad",new Date().toLocaleTimeString());
+})
+document.querySelector('#start').addEventListener('click',n=>{
+    console.log("hammad",new Date().toLocaleTimeString());
+const stoptime=setInterval(saymyname,1000)
+document.querySelector('#stop').addEventListener('click',n=>{
+    clearInterval(stoptime)
+})
+
+})
+
+
+
+
+
+
+</script>
+</html>
