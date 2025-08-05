@@ -1,10 +1,8 @@
 # 📚 JavaScript Concepts Collection
 
 <p align="center">
-
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" width="150">
 </p>
-
 A complete collection of **JavaScript concepts**, examples, and best practices — from beginner to advanced — all in **pure JavaScript**.  
 Perfect for learning, revising, or preparing for **interviews**.
 
