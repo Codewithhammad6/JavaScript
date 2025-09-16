@@ -193,3 +193,4 @@
 // this.password=password
 // }
 // console.log(new creatuser('hammad','hamm@gmail.com',123));
+
