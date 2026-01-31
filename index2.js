@@ -221,3 +221,4 @@
 
 // const{teacher:sir}=course             //if teacher is big word replace it with sir
 // console.log(sir)
+
