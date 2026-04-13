@@ -1,6 +1,6 @@
 //                       Getter Setter
 
- 
+
 // class user{
 //     constructor(username,password){
 // this.username=username;
